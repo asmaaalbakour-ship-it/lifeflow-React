@@ -1,0 +1,130 @@
+.focus-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.focus-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 35px;
+  text-align: center;
+  background: #fffdf8;
+  border: 1px solid #e3d8c4;
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(73, 107, 79, 0.1);
+}
+
+.focus-icon {
+  display: block;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.focus-card h2 {
+  margin: 0 0 8px;
+  color: #496b4f;
+  font-size: 28px;
+}
+
+.focus-card p {
+  margin: 0 0 25px;
+  color: #777;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: bold;
+  color: #6f9273;
+  margin: 20px 0 25px;
+  letter-spacing: 2px;
+}
+
+.focus-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.focus-actions button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  background: #6f9273;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.focus-actions button:hover {
+  background: #55765a;
+  transform: translateY(-2px);
+}
+
+.focus-actions .reset-button {
+  background: #f4ead8;
+  color: #496b4f;
+  border: 1px solid #d8c8a8;
+}
+
+.focus-actions .reset-button:hover {
+  background: #eadcc4;
+}
+.session-message {
+  margin: 15px auto 0;
+  padding: 12px 18px;
+  max-width: 360px;
+  background: #f4ead8;
+  border: 1px solid #d8c8a8;
+  border-radius: 12px;
+  color: #496b4f;
+  font-weight: bold;
+  font-size: 14px;
+  animation: focusMessage 0.3s ease;
+}
+
+@keyframes focusMessage {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus Time Buttons */
+
+.focus-times {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.time-button {
+  border: 1px solid #d8c8a8;
+  border-radius: 10px;
+  padding: 8px 14px;
+  background: #fffdf8;
+  color: #496b4f;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.time-button:hover {
+  background: #f4ead8;
+}
+
+.active-time {
+  background: #6f9273;
+  color: white;
+  border-color: #6f9273;
+}
+
+.time-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,290 @@
+css
+/* Daily habits page styles */
+
+.habits-page {
+  min-height: 100vh;
+  padding: 40px 8%;
+  background: #f5f1e8;
+}
+
+/* Header */
+
+.habits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.habits-header h1 {
+  color: #496b4f;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.habits-header p {
+  color: #737b73;
+}
+
+/* Progress */
+
+.progress-circle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: #dcebd7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-circle strong {
+  font-size: 22px;
+  color: #496b4f;
+}
+
+.progress-circle span {
+  font-size: 12px;
+  color: #68756b;
+}
+
+/* Calendar */
+
+.calendar-section {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-section h2 {
+  color: #496b4f;
+  margin-bottom: 18px;
+}
+
+.calendar-section input {
+  padding: 12px 15px;
+  border: 2px solid #dcebd7;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.selected-date {
+  margin-top: 15px;
+  color: #777;
+}
+
+/* Add Habit */
+
+.add-habit {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.add-habit input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #dcebd7;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-habit input:focus {
+  border-color: #8eaf8f;
+}
+
+.add-habit button {
+  border: none;
+  background: #6f9273;
+  color: white;
+  padding: 0 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-habit button:hover {
+  background: #55765a;
+}
+
+/* Habit Cards */
+
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.habit-card {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.habit-card:hover {
+  transform: translateY(-2px);
+}
+
+.habit-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habit-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #edf5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.habit-info h3 {
+  color: #354a39;
+  margin-bottom: 5px;
+}
+
+.habit-info p {
+  color: #8a958b;
+  font-size: 14px;
+}
+
+.habit-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.complete-btn {
+  border: none;
+  background: #dcebd7;
+  color: #496b4f;
+  padding: 10px 15px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.habit-completed {
+  background: #eef6eb;
+}
+
+.habit-completed .habit-info h3 {
+  text-decoration: line-through;
+  color: #7f8c81;
+}
+
+.habit-completed .complete-btn {
+  background: #6f9273;
+  color: white;
+}
+
+.delete-habit {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.empty-habits {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 18px;
+}
+
+.empty-habits span {
+  font-size: 45px;
+}
+
+.empty-habits h3 {
+  margin: 15px 0 8px;
+  color: #496b4f;
+}
+
+.empty-habits p {
+  color: #888;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .habits-page {
+    padding: 30px 5%;
+  }
+
+  .habits-header {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .habits-header h1 {
+    font-size: 28px;
+  }
+
+  .add-habit {
+    flex-direction: column;
+  }
+
+  .add-habit button {
+    padding: 14px;
+  }
+
+  .habit-card {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .habit-actions {
+    flex-direction: column;
+  }
+}
+.habit-counter {
+  margin-top: 8px;
+  color: #6f9273;
+  font-weight: bold;
+}
+.habit-dot {
+  display: block;
+  font-size: 8px;
+  line-height: 1;
+  margin-top: 2px;
+}
+.streak-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #f4ead8;
+  border: 1px solid #d8c8a8;
+}
+
+.streak-card span {
+  font-size: 24px;
+}
+
+.streak-card strong {
+  font-size: 28px;
+  color: #6f9273;
+}
+
+.streak-card small {
+  color: #777;
+  margin-top: 2px;
+}
